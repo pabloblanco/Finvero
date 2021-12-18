@@ -1,0 +1,36 @@
+{% extends 'PrestaShopBundle:Admin/Product/CatalogPage:catalog.html.twig' %}
+
+{% block product_catalog_filters %}
+	{{ include('@Product/CatalogPage/Blocks/filters.html.twig', {
+		'limit': limit,
+		'offset': offset,
+		'orderBy': orderBy,
+		'sortOrder': sortOrder
+		})
+	}}  
+{% endblock %}
+
+{% block product_catalog_form %}
+	{{ include('@Product/CatalogPage/Forms/form_products.html.twig', {
+		'limit': limit,
+		'orderBy': orderBy,
+		'offset': offset,
+		'sortOrder': sortOrder,
+		'filter_category': filter_category,
+		'filter_column_id_product': filter_column_id_product,
+		'filter_column_name': filter_column_name,
+		'filter_column_reference': filter_column_reference,
+		'filter_column_name_category': filter_column_name_category,
+		'filter_column_price': filter_column_price,
+		'filter_column_sav_quantity': filter_column_sav_quantity,
+		'filter_column_active': filter_column_active,
+		'has_category_filter': has_category_filter,
+		'activate_drag_and_drop': activate_drag_and_drop,
+		'products': products,
+		'last_sql': last_sql,
+		'product_count_filtered': product_count_filtered,
+		'pagination_parameters': pagination_parameters,
+		'pagination_limit_choices': pagination_limit_choices
+		})
+	}}
+{% endblock %}

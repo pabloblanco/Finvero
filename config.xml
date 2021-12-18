@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+ <name>finveromodule</name>
+ <displayName>
+ <![CDATA[Finveromodule]]>
+ </displayName>
+ <version>
+ <![CDATA[1.0.0]]>
+ </version>
+ <description>
+ <![CDATA[Módulo para pagos a crédito Finvero compatible con prestashop a partir de la version 1.7.5.x]]>
+ </description>
+ <author>
+ <![CDATA[https://www.linkedin.com/in/pablo-blanco-8728b388/]]>
+ </author>
+ <tab>
+ <![CDATA[payments_gateways]]>
+ </tab>
+ <confirmUninstall>
+ <![CDATA[¿Desea desinstalar?]]>
+ </confirmUninstall>
+ <is_configurable>0</is_configurable>
+ <need_instance>0</need_instance>
+ <limited_countries>MX</limited_countries>
+</module>

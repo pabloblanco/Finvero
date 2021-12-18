@@ -1,0 +1,13 @@
+{
+    "name": "eos/finveromodule",
+    "description": "A controller that allow you the credit sales",
+    "autoload":{
+        "psr-4": {
+            "Finveromodule\\": "src/"
+        }
+    },
+    "config": {
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+}
